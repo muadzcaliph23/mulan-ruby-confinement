@@ -1,8 +1,6 @@
 import React from "react";
 
 const Servis = () => {
-  const services = [{}];
-
   return (
     <div>
       <div

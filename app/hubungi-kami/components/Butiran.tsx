@@ -1,11 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Template from "@/app/Template";
 import HubungiTerus from "./HubungiTerus";
 
 const Butiran = () => {
-  const [date, setDate] = useState<Date | undefined>();
-
   return (
     <div
       className="bg-gray-200 min-h-screen grid grid-cols-2 gap-[100px] justify-center items-center bg-no-repeat w-full px-[10%] py-10"

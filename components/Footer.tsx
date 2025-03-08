@@ -1,6 +1,5 @@
-import { FaFacebookSquare, FaInstagramSquare, FaTiktok } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
-import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineMail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";

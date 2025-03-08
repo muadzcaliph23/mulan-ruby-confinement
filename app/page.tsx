@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import QuickBooking from "./components/QuickBooking";
 import About from "./components/About";
 import Pakej from "./components/Pakej";
 import Servis from "./components/Servis";
