@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import About from "./components/About";
 import Pakej from "./components/Pakej";
 import Servis from "./components/Servis";

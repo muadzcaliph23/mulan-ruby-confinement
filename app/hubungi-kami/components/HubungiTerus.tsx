@@ -10,8 +10,8 @@ const HubungiTerus = () => {
     <Template>
       <div className="flex flex-col">
         <h2 className="font-semibold mb-5">
-          Sila gunakan borang di sebelah untuk menghubungi kami. Untuk mendapat
-          respon yang cepat, anda boleh hubungi di:
+          Sila gunakan borang ini untuk menghubungi kami. Untuk mendapat respon
+          yang cepat, anda boleh hubungi di:
         </h2>
         <div className="flex flex-col gap-3">
           <Link
