@@ -16,8 +16,8 @@ const NavbarOptionsMobile = ({
     <div
       className={
         menuOpen
-          ? "fixed left-0 top-0 w-[80%] md:hidden min-h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-          : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+          ? "fixed left-0 top-0 w-[75%] md:hidden min-h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+          : "fixed left-[-100%] min-h-screen top-0 p-10 ease-in duration-500"
       }
     >
       <div className="flex w-full justify-end items-center">

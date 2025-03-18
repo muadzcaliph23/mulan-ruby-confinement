@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
-export default {
+const config: Config =  {
     darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -61,5 +62,19 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+  plugins: [require("tailwindcss-animate"), 
+	plugin(function ({ addUtilities }) {
+	const newUtilities = {
+	  ".no-scrollbar::-webkit-scrollbar": {
+		display: "none",
+	  },
+	  ".no-scrollbar": {
+		"ms-overflow-style": "none",
+		"scrollbar-width": "none",
+	  },
+	};
+
+	addUtilities(newUtilities);
+  })],
+} 
+export default config;

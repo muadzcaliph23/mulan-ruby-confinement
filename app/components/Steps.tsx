@@ -44,16 +44,16 @@ const Steps = () => {
     },
   ];
   return (
-    <div className="py-[8%] px-[5%] min-h-screen">
-      <div className="flex flex-col items-center text-center">
+    <div className="py-[20%] px-[10%] md:py-[10%] md:min-h-screen">
+      <div className="flex flex-col justify-center md:items-center text-center">
         <h1 className="text-4xl font-bold drop-shadow-lg mb-[7%]">
-          CARA PENGGUNAAN LAMAN WEB
+          Cara Penggunaan <span className="text-primary">Laman Web</span>
         </h1>
-        <div className="grid grid-cols-6 gap-10 mb-[7%]">
+        <div className="grid grid-cols-6 overflow-x-auto no-scrollbar py-5 gap-[160px] mx-3 pl-[25%] md:px-5 md:gap-10 md:mb-[7%] overflow-scroll">
           {steps.map((s, idx) => (
             <div
               key={idx}
-              className={`border-2 flex hover:text-white flex-col gap-6 items-center px-3 pt-3 pb-8 rounded-xl w-[150px] hover:scale-105 transition-all duration-300 ${
+              className={`border-2 flex hover:text-white flex-col hover:cursor-pointer gap-6 items-center px-3 pt-3 pb-8 rounded-xl w-[150px] hover:scale-105 transition-all duration-300 ${
                 idx % 2 === 0
                   ? "border-primary hover:bg-primary"
                   : "border-secondary hover:bg-secondary"
@@ -66,7 +66,7 @@ const Steps = () => {
           ))}
         </div>
         <Link
-          className="bg-primary font-semibold text-white px-4 py-3 rounded-lg hover:bg-gray-300 transition-colors duration-500"
+          className="bg-primary my-10 md:mt-0 font-semibold text-white px-4 py-3 rounded-lg hover:bg-gray-300 transition-colors duration-500"
           href="/#top"
         >
           Back to top

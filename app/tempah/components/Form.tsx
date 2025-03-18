@@ -25,7 +25,7 @@ import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
 const Form = () => {
-  const [date, setDate] = useState<any>();
+  const [date, setDate] = useState<Date>();
   const [pakej, setPakej] = useState("Premium");
   const router = useRouter();
   const form = useForm<Tempahan>();
@@ -39,7 +39,7 @@ const Form = () => {
 
   useEffect(() => {
     setValue("tarikh", date);
-  }, [date, "tarikh", setValue]);
+  }, [date, setValue]);
 
   console.log(pakej);
 

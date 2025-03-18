@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { motion } from "framer-motion";
+import Whatsapp from "@/components/Whatsapp";
 
 const Carousel = () => {
   const backgroundImages = [
@@ -51,20 +52,17 @@ const Carousel = () => {
             style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
           >
             <motion.div
-              className="w-full h-screen flex flex-col gap-5 text-white justify-center items-center px-10 py-10"
+              className="w-full h-screen flex flex-col gap-5 text-white justify-center items-center md:px-10 py-10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="text-center w-1/2 space-y-5 mb-10">
-                <h1 className="text-4xl font-bold drop-shadow-lg">
+              <div className="text-center w-2/3 md:w-1/2 space-y-5 mb-7">
+                <h1 className="text-3xl md:text-4xl font-bold drop-shadow-lg">
                   {img.title}
                 </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Natus ullam rem totam, ex, debitis amet nisi labore quaerat
-                  placeat cumque, corrupti vitae iste quisquam mollitia officia
-                  recusandae consequuntur est atque?
+                <p className="text-lg">
+                  Penjagaan Berpantang Premium di Rumah Anda
                 </p>
               </div>
               <motion.button
@@ -91,6 +89,9 @@ const Carousel = () => {
                 />
               </div>
             </motion.div>
+            <div className="fixed bottom-10 right-10 hover:animate-bounce md:right-[100px] z-10">
+              <Whatsapp />
+            </div>
           </div>
         </div>
       ))}

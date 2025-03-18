@@ -1,9 +1,9 @@
-import Form from "./components/Form";
+import TempahanBasic from "./components/TempahanBasic";
 
 export default async function Booking() {
   return (
     <div>
-      <Form />
+      <TempahanBasic />
     </div>
   );
 }

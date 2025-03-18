@@ -1,9 +1,9 @@
-import Butiran from "./components/Butiran";
+import HubungiTerus from "./components/HubungiTerus";
 
 export default async function Contact() {
   return (
     <div className="min-h-screen">
-      <Butiran />
+      <HubungiTerus />
     </div>
   );
 }

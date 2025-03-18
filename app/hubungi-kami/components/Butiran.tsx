@@ -2,19 +2,8 @@
 import React from "react";
 import Template from "@/app/Template";
 import HubungiTerus from "./HubungiTerus";
-import { useForm } from "react-hook-form";
-import { Mesej } from "@/types/mesej";
 
 const Butiran = () => {
-  const form = useForm<Mesej>();
-  const {
-    handleSubmit,
-    setError,
-    register,
-    setValue,
-    formState: { isSubmitting, errors },
-  } = form;
-
   return (
     <div
       className="bg-gray-200 min-h-screen md:grid md:grid-cols-2 flex flex-col gap-[50px] md:gap-[100px] justify-center items-center bg-no-repeat w-full px-[10%] py-10"

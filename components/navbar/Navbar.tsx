@@ -33,9 +33,14 @@ const Navbar = () => {
     <header className="w-full fixed z-10">
       <nav>
         <div
-          className={`flex justify-between ${textColor} ${bgColor} item-center transition-all duration-300 py-3 px-[10%]`}
+          className={`flex justify-between ${textColor} ${bgColor} drop-shadow-lg items-center transition-all duration-300 px-[10%]`}
         >
-          <Image src="/Profile/Logo.png" width={60} height={40} alt="logo" />
+          <Image
+            src="/Profile/Logo-nobg.png"
+            width={80}
+            height={40}
+            alt="logo"
+          />
           <NavbarOptionsWeb />
           <div className="md:hidden flex items-center" onClick={handleNav}>
             <AiOutlineMenu size={25} />
