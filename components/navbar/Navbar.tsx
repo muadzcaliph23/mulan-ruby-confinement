@@ -4,9 +4,13 @@ import Image from "next/image";
 import NavbarOptionsWeb from "./NavbarOptionsWeb";
 import NavbarOptionsMobile from "./NavbarOptionsMobile";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-  const [bgColor, setBgColor] = useState("bg-transparent");
+  const router = useRouter();
+  const [bgColor, setBgColor] = useState(
+    "bg-gradient-to-t from-transparent to-black"
+  );
   const [textColor, setTextColor] = useState("text-white");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -37,6 +41,8 @@ const Navbar = () => {
         >
           <Image
             src="/Profile/Logo-nobg.png"
+            onClick={() => router.push("/")}
+            className="hover:cursor-pointer"
             width={80}
             height={40}
             alt="logo"

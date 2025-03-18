@@ -28,7 +28,7 @@ const TempahanBasic = () => {
             </h2>
             <div>
               <Image
-                src="/Tempahan/QR-payment.jpg"
+                src="/Tempah/QRpayment.jpg"
                 alt="QR"
                 width={200}
                 height={400}
