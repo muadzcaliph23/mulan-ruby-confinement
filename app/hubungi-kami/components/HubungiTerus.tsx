@@ -9,13 +9,13 @@ import { FaHouse } from "react-icons/fa6";
 
 const HubungiTerus = () => {
   return (
-    <div className="flex flex-col bg-gray-100 min-h-screen px-[10%] py-10 items-center justify-center">
+    <div className="flex flex-col bg-gray-100 min-h-screen px-[10%] py-10 items-center justify-center w-full">
       <Template>
-        <h2 className="font-semibold mb-6 text-3xl">
+        <h2 className="font-semibold mb-6 text-3xl md:text-4xl">
           <span className="text-secondary">Ada soalan?</span> <br />
           Hubungi kami
         </h2>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 md:w-[450px]">
           <Link
             className="w-full"
             target="_blank"
@@ -50,14 +50,14 @@ const HubungiTerus = () => {
             target="_blank"
           >
             <motion.div
-              className="rounded-lg border-secondary hover:bg-secondary border-2 px-3 py-2 flex items-center gap-3"
+              className="rounded-lg border-secondary hover:bg-secondary border-2 px-3 py-1 flex items-center gap-3"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.5 }}
             >
               <FaHouse size={20} />
               <p>
                 No36c-2-5, Bukit Mas,
-                <br />
+                <br className="block md:hidden" />
                 Taman Melawati KL
               </p>
             </motion.div>

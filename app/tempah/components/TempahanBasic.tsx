@@ -8,9 +8,9 @@ const TempahanBasic = () => {
   return (
     <div className="flex flex-col bg-gray-100 min-h-screen px-[10%] py-10 items-center justify-center">
       <Template>
-        <div className="flex flex-col gap-[100px]">
+        <div className="flex flex-col md:flex-row md:items-center gap-[100px] md:gap-[200px]">
           <div>
-            <h2 className="font-semibold mb-6 text-3xl">
+            <h2 className="font-semibold mb-6 text-3xl md:text-4xl">
               <span className="text-secondary">Untuk tempahan,</span> <br />
               tekan link di bawah
             </h2>
@@ -23,7 +23,9 @@ const TempahanBasic = () => {
             </Link>
           </div>
           <div>
-            <h2 className="font-semibold mb-6 text-3xl">QR Payment</h2>
+            <h2 className="font-semibold mb-6 text-3xl md:text-4xl">
+              QR Payment
+            </h2>
             <div>
               <Image
                 src="/Tempahan/QR_payment.jpg"
