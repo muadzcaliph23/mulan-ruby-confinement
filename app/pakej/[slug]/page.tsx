@@ -11,7 +11,7 @@ interface PageProps {
   };
 }
 
-const Page: NextPage<PageProps> = ({ params }: PageProps) => {
+const Page: NextPage<PageProps> = ({ params }) => {
   console.log(params.slug);
   const pakejPilihan = pakej.find(
     (p) => p.link.replace("/", "") === params.slug
