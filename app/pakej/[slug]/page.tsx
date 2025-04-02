@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Pilihan from "./components/Pilihan";
 import Penerangan from "./components/Penerangan";
 import Tempah from "./components/Tempah";
+import { NextPage } from "next";
 
 interface PageProps {
   params: {
@@ -10,7 +11,7 @@ interface PageProps {
   };
 }
 
-const page = async ({ params }: PageProps) => {
+const Page: NextPage<PageProps> = ({ params }: PageProps) => {
   console.log(params.slug);
   const pakejPilihan = pakej.find(
     (p) => p.link.replace("/", "") === params.slug
@@ -30,4 +31,4 @@ const page = async ({ params }: PageProps) => {
   );
 };
 
-export default page;
+export default Page;
