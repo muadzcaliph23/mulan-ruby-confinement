@@ -18,7 +18,7 @@ const Pilihan = ({ pakejPilihan }: { pakejPilihan: Pakej }) => {
           transition={{ duration: 0.5, delay: idx * 0.3 }}
           onClick={() => router.push(`/pakej/${p.link}`)}
           className={`${
-            pakejPilihan.link == p.link ? "bg-primary" : "bg-gray-300"
+            pakejPilihan?.link == p.link ? "bg-primary" : "bg-gray-300"
           } text-white text-lg rounded-lg drop-shadow-lg flex flex-col hover:cursor-pointer`}
         >
           <div className="px-5 py-3">{p.nama.toUpperCase()}</div>

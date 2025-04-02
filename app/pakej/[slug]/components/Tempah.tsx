@@ -22,7 +22,7 @@ const Tempah = ({ pakejPilihan }: { pakejPilihan: Pakej }) => {
           height={300}
         />
         <div className="flex flex-col gap-2 md:pl-[90px] text-center items-center md:items-start">
-          <h1 className="font-semibold text-lg">{pakejPilihan.nama}</h1>
+          <h1 className="font-semibold text-lg">{pakejPilihan?.nama}</h1>
           <p className=" mt-4">Untuk pakej ini, harga boleh dibincangkan</p>
           <Link
             href="/tempah"

@@ -13,7 +13,7 @@ const Penerangan = ({ pakejPilihan }: { pakejPilihan: Pakej }) => {
             Servis yang disediakan
           </h2>
           <ol className="pl-4 md:pl-5 text-[15px] space-y-1 text-gray-600">
-            {pakejPilihan.pros.map((pro, idx) => (
+            {pakejPilihan?.pros.map((pro, idx) => (
               <li key={idx}>{pro}</li>
             ))}
           </ol>
