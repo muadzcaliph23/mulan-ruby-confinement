@@ -4,7 +4,13 @@ import Pilihan from "./components/Pilihan";
 import Penerangan from "./components/Penerangan";
 import Tempah from "./components/Tempah";
 
-export default function Page({ params }: { params: { slug: string } }) {
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const page = async ({ params }: PageProps) => {
   console.log(params.slug);
   const pakejPilihan = pakej.find(
     (p) => p.link.replace("/", "") === params.slug
@@ -22,4 +28,6 @@ export default function Page({ params }: { params: { slug: string } }) {
       <Penerangan pakejPilihan={pakejPilihan} />
     </div>
   );
-}
+};
+
+export default page;
