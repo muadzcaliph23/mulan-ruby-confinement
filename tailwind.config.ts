@@ -17,11 +17,11 @@ const config: Config =  {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			primary: {
-  				DEFAULT: '#860F0F',
+  				DEFAULT: '#801336',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
-  				DEFAULT: '#FBA6AA',
+  				DEFAULT: '#E8AEB7',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			card: {

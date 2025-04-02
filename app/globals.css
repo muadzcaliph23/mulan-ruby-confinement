@@ -75,3 +75,7 @@ body {
 html {
   font-family: var(--font-poppins), sans-serif;
 }
+
+ol {
+  list-style-type: decimal; /* Ensure numbers appear */
+}

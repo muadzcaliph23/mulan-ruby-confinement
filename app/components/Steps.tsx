@@ -49,7 +49,7 @@ const Steps = () => {
         <h1 className="text-4xl font-bold drop-shadow-lg mb-[7%]">
           Cara Penggunaan <span className="text-primary">Laman Web</span>
         </h1>
-        <div className="grid grid-cols-6 overflow-x-auto no-scrollbar py-5 gap-[160px] mx-3 pl-[25%] md:px-5 md:gap-10 md:mb-[7%] overflow-scroll">
+        <div className="grid grid-cols-6 overflow-x-auto no-scrollbar py-5 gap-[160px] mx-3 pl-[25%] md:px-5 md:gap-10 md:mb-[4%] overflow-scroll">
           {steps.map((s, idx) => (
             <div
               key={idx}
@@ -65,12 +65,6 @@ const Steps = () => {
             </div>
           ))}
         </div>
-        <Link
-          className="bg-primary my-10 md:mt-0 font-semibold text-white px-4 py-3 rounded-lg hover:bg-gray-300 transition-colors duration-500"
-          href="/#top"
-        >
-          Back to top
-        </Link>
       </div>
     </div>
   );

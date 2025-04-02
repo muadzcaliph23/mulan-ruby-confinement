@@ -1,47 +1,11 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
+import { pakej } from "../../lib/pakej";
 
 const Pakej = () => {
-  const pakej = [
-    {
-      nama: "Mulan Ruby Mama Glow",
-      harga: "RM2,500",
-      pros: [
-        "Training Fee",
-        "Tuition Fee",
-        "Professional Fee",
-        "Examination Fee",
-      ],
-      cons: ["Allowance"],
-      link: "/mama-glow",
-    },
-    {
-      nama: "Mulan Ruby Mama Light",
-      harga: "RM2,000",
-      pros: [
-        "Training Fee",
-        "Tuition Fee",
-        "Professional Fee",
-        "Examination Fee",
-      ],
-      cons: ["Allowance"],
-      link: "/mama-light",
-    },
-    {
-      nama: "Mulan Ruby Mama White",
-      harga: "RM2,000",
-      pros: [
-        "Training Fee",
-        "Tuition Fee",
-        "Professional Fee",
-        "Examination Fee",
-      ],
-      cons: ["Allowance"],
-      link: "/mama-white",
-    },
-  ];
   return (
     <div className="grid py-5 text-black" id="pakej">
       <h1 className="md:mb-[5%] mb-[10%] text-3xl md:text-4xl font-bold drop-shadow-lg text-center">
@@ -73,9 +37,12 @@ const Pakej = () => {
                 ))}
               </ol>
             </div>
-            <button className="w-full text-center font-semibold text-white px-5 py-3 text-sm bg-secondary rounded-lg">
+            <Link
+              href={`/pakej/${p.link}`}
+              className="w-full text-center font-semibold text-white px-5 py-3 text-sm bg-secondary rounded-lg"
+            >
               Baca Lanjut
-            </button>
+            </Link>
           </div>
         ))}
       </div>

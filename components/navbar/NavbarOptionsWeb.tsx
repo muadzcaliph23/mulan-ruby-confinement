@@ -7,19 +7,19 @@ const NavbarOptionsWeb = () => {
   return (
     <div className="hidden md:flex gap-5 font-semibold items-center">
       <button
-        className="hover:text-primary transition-all duration-500"
+        className="hover:text-secondary transition-all duration-500"
         onClick={() => router.push("/#tentang-kami")}
       >
         MENGENAI KAMI
       </button>
       <button
-        className="hover:text-primary transition-all duration-500"
+        className="hover:text-secondary transition-all duration-500"
         onClick={() => router.push("/#pakej")}
       >
         PAKEJ
       </button>
       <button
-        className="hover:text-primary transition-all duration-500"
+        className="hover:text-secondary transition-all duration-500"
         onClick={() => router.push("/hubungi-kami")}
       >
         HUBUNGI KAMI

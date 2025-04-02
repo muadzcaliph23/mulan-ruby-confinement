@@ -9,15 +9,15 @@ const Whatsapp = () => {
       target="_blank"
       href="https://api.whatsapp.com/send?phone=60143759441"
     >
-      <div className="hidden md:flex">
+      <div className="hidden md:flex items-center drop-shadow-lg">
         <Image
           src="/whatsapp.png"
           alt="whatsapp"
           className="z-10"
-          width={40}
+          width={42}
           height={20}
         />
-        <div className="pl-12 pr-5 py-2 bg-white md:relative md:right-9 rounded-full text-black font-semibold border-primary border-2">
+        <div className="pl-11 pr-5 py-1.5 bg-white md:relative md:right-9 rounded-full text-black font-semibold">
           Contact Us
         </div>
       </div>
