@@ -8,7 +8,6 @@ import {
   UserSearch,
 } from "lucide-react";
 import { TbMassage } from "react-icons/tb";
-import Link from "next/link";
 
 const Steps = () => {
   const steps = [
