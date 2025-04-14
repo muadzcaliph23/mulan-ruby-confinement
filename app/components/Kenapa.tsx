@@ -3,17 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-  },
-};
-
 const Kenapa = () => {
   return (
     <div
