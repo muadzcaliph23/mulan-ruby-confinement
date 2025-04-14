@@ -8,11 +8,14 @@ const TempahanBasic = () => {
   return (
     <div className="flex flex-col bg-gray-100 min-h-screen px-[10%] py-10 items-center justify-center">
       <Template>
-        <div className="flex flex-col md:flex-row md:items-center gap-[100px] md:gap-[200px]">
-          <div>
+        <div className="flex flex-col md:flex-row md:items-center gap-[100px] md:gap-[200px] max-md:my-[90px]">
+          <div className="md:w-1/2">
             <h2 className="font-semibold mb-6 text-3xl md:text-4xl">
-              <span className="text-secondary">Untuk tempahan,</span> <br />
-              tekan link di bawah
+              <span className="text-secondary">
+                Anda mahukan penjagaan selepas bersalin?
+              </span>{" "}
+              <br />
+              Tekan link di bawah untuk tempahan
             </h2>
             <Link
               href="https://forms.gle/3CeWAKgPVspux76S6"

@@ -10,7 +10,7 @@ const Footer = () => {
           <Link href="/">Utama</Link>
           <Link href="/#pakej">Pakej</Link>
           <Link href="/#servis">Servis</Link>
-          <Link href="/hubungi-kami">Hubungi Kami</Link>
+          <Link href="/hubungi">Hubungi Kami</Link>
         </div>
         <div className="flex justify-center items-center gap-x-8 my-2">
           <Link

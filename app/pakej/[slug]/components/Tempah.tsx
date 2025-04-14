@@ -24,12 +24,21 @@ const Tempah = ({ pakejPilihan }: { pakejPilihan: Pakej }) => {
         <div className="flex flex-col gap-2 md:pl-[90px] text-center items-center md:items-start">
           <h1 className="font-semibold text-lg">{pakejPilihan?.nama}</h1>
           <p className=" mt-4">Untuk pakej ini, harga boleh dibincangkan</p>
-          <Link
-            href="/tempah"
-            className="bg-primary text-center text-white py-1.5 rounded-lg w-2/3 hover:bg-red-800"
-          >
-            Tempah Sekarang
-          </Link>
+          <div className="flex gap-2">
+            <Link
+              href="/tempah"
+              className="bg-primary text-center text-white py-1.5 px-2 rounded-lg hover:bg-red-800"
+            >
+              Tempah Sekarang
+            </Link>
+            <Link
+              href="https://api.whatsapp.com/send?phone=60143759441&message=Test"
+              target="_blank"
+              className="bg-primary text-center text-white py-1.5 px-2 rounded-lg hover:bg-red-800"
+            >
+              Nak Tanya?
+            </Link>
+          </div>
         </div>
       </motion.div>
     </div>

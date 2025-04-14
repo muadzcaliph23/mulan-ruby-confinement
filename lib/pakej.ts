@@ -2,39 +2,45 @@ import { Pakej } from "@/types/pakej";
 
 export const pakej: Pakej[] = [
 {
-    nama: "Mulan Ruby Mama Glow",
-    harga: "RM2,500",
+    nama: "Ruby Mama Glow",
+    harga:
+        {
+            "7 Hari": "3,500",
+            "14 Hari": "6,500",
+            "30 Hari": "12,500,"
+        },
     pros: [
-    "Training Fee",
-    "Tuition Fee",
-    "Professional Fee",
-    "Examination Fee",
+    "Mandian Herba",
+    "Urutan Postnatal, Lancar Susu, Wajah",
+    "Bertungku Perut",
+    "Param, Pilis dan Tapel",
+    "Pemakaian Bengkung, Sanggul dan Stokin",
+    "Mandi, Tuam dan Urut Bayi",
     ],
-    cons: ["Allowance"],
+    cons: [        "Masakan Menu Berkhasiat 2x Sehari",
+        "Laundry Ibu dan Anak",
+        "Ulang alik dan Rehat"],
     link: "/mama-glow",
 },
 {
-    nama: "Mulan Ruby Mama Light",
-    harga: "RM2,000",
+    nama: "Mulan Royal Nest",
+    harga:
+        {
+            "7 Hari": "6,500",
+            "14 Hari": "12,500",
+            "30 Hari": "25,000"
+        },
     pros: [
-    "Training Fee",
-    "Tuition Fee",
-    "Professional Fee",
-    "Examination Fee",
-    ],
-    cons: ["Allowance"],
-    link: "/mama-light",
-},
-{
-    nama: "Mulan Ruby Mama White",
-    harga: "RM2,000",
-    pros: [
-    "Training Fee",
-    "Tuition Fee",
-    "Professional Fee",
-    "Examination Fee",
-    ],
-    cons: ["Allowance"],
-    link: "/mama-white",
+        "Mandian Herba",
+        "Urutan Postnatal, Lancar Susu, Wajah",
+        "Bertungku Perut",
+        "Param, Pilis dan Tapel",
+        "Pemakaian Bengkung, Sanggul dan Stokin",
+        "Mandi, Tuam dan Urut Bayi",
+        "Masakan Menu Berkhasiat 2x Sehari",
+        "Laundry Ibu dan Anak",
+        "Ulang alik dan Rehat"
+        ],
+    link: "/royal-nest",
 },
 ];

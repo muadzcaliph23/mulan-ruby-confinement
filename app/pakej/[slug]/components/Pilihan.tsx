@@ -9,7 +9,9 @@ const Pilihan = ({ pakejPilihan }: { pakejPilihan: Pakej }) => {
   const router = useRouter();
 
   return (
-    <div className="md:grid md:grid-cols-3 px-6 space-y-10 md:space-y-0 justify-center items-center gap-10 md:px-[130px]">
+    <div
+      className={`md:grid md:grid-cols-${pakej.length} px-6 space-y-10 md:space-y-0 justify-center items-center gap-10 md:px-[130px]`}
+    >
       {pakej.map((p, idx) => (
         <motion.div
           key={idx}
@@ -19,11 +21,11 @@ const Pilihan = ({ pakejPilihan }: { pakejPilihan: Pakej }) => {
           onClick={() => router.push(`/pakej/${p.link}`)}
           className={`${
             pakejPilihan?.link == p.link ? "bg-primary" : "bg-gray-300"
-          } text-white text-lg rounded-lg drop-shadow-lg flex flex-col hover:cursor-pointer`}
+          } text-white text-lg rounded-lg text-center drop-shadow-lg flex flex-col hover:cursor-pointer`}
         >
           <div className="px-5 py-3">{p.nama.toUpperCase()}</div>
           <div className="bg-white px-5 py-5 text-sm text-gray-500 rounded-b-lg">
-            Harga sekitar {p.harga}
+            Harga sekitar {p.harga["7 Hari"]}
           </div>
         </motion.div>
       ))}

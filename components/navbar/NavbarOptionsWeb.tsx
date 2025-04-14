@@ -20,7 +20,7 @@ const NavbarOptionsWeb = () => {
       </button>
       <button
         className="hover:text-secondary transition-all duration-500"
-        onClick={() => router.push("/hubungi-kami")}
+        onClick={() => router.push("/hubungi")}
       >
         HUBUNGI KAMI
       </button>

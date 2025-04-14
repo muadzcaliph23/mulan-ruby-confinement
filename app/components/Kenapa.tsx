@@ -1,5 +1,18 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 const Kenapa = () => {
   return (
@@ -11,7 +24,13 @@ const Kenapa = () => {
         Kenapa pilih{" "}
         <span className="text-primary">Mulan Ruby Confinement?</span>
       </h1>
-      <div className="grid md:grid-cols-3 gap-5 text-[#f6e6d7] mt-8">
+      <motion.div
+        className="grid md:grid-cols-3 gap-5 text-[#f6e6d7] mt-8"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5 }}
+      >
         <div className="bg-primary rounded-lg drop-shadow-md flex flex-col gap-4 items-center justify-between px-5 py-10">
           <h2 className="font-semibold text-lg text-white">
             Therapist Bertauliah
@@ -34,14 +53,14 @@ const Kenapa = () => {
             <p>Pakej boleh disunting Mengikut Keperluan Ibu</p>
           </div>
         </div>
-        <div className="bg-primary rounded-lg drop-shadow-md flex flex-col items-center justify-between px-5 py-10">
+        <div className="bg-primary rounded-lg drop-shadow-md flex flex-col gap-4 items-center justify-between px-5 py-10">
           <h2 className="font-semibold text-white text-lg">
             Produk & Herba Premium
           </h2>
           <Image src="/Kenapa/herbs.png" alt="Staff" width={100} height={160} />
           <p>Peralatan kami sedia untuk Pemulihan Terbaik</p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
